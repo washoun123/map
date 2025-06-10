@@ -43,7 +43,7 @@ var road = L.polyline([tunis, BebAlioua, JebalJloud, hammamet, Enfidha, sfax, Sk
     lineJoin: 'round'
 }).addTo(map);
 
-var roadBorders = L.polyline([tunis, BebAlioua, JebalJloud, hammamet, Enfidha, sfax, Skhira, test, gabes, Benguerdene, rassjedir, Ezawia], {
+var roadBorders = L.polyline([tunis, BebAlioua, JebalJloud, hammamet, Enfidha, sfax, Skhira, test, gabes, Benguerdene, rassjedir, Ezawia,test2,Triploi,test3,test4,Misrata,test5,test6,test7], {
     color: 'red',
     weight: 14,
     opacity: 0.2,
