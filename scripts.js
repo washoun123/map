@@ -11,6 +11,7 @@
   L.marker([36.811485785684454, 10.184532681633293]).addTo(map).bindPopup("Tunis").openPopup();//Tunis
   L.marker([34.7406, 10.7603]).addTo(map).bindPopup("Sfax");
   L.marker([33.148860923524225, 11.562069688770785]).addTo(map).bindPopup("Maaber ras jedir");
+  L.marker([32.152863634448124, 20.08714844040725]).addTo(map).bindPopup("Benghazi");
   L.marker([31.7683, 35.2137]).addTo(map).bindPopup("نقطة الوصول").openPopup(); // Jerusalem
 
 var tunis = [36.8065, 10.1815];
