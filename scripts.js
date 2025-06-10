@@ -32,9 +32,10 @@ var test4=[32.70901865062443, 14.030113967018469];
 var Misrata=[32.35178656050827, 15.049399749529856];
 var test5 = [31.447033793265227, 15.267823755506381];
 var test6=[31.186613017259404, 16.56396617672304];
+var test7=[32.152863634448124, 20.08714844040725];
 
 
-var road = L.polyline([tunis, BebAlioua, JebalJloud, hammamet, Enfidha, sfax, Skhira, test, gabes, Benguerdene, rassjedir, Ezawia,test2,Triploi,test3,test4,Misrata,test5,test6], {
+var road = L.polyline([tunis, BebAlioua, JebalJloud, hammamet, Enfidha, sfax, Skhira, test, gabes, Benguerdene, rassjedir, Ezawia,test2,Triploi,test3,test4,Misrata,test5,test6,test7], {
     color: 'red',        // Dark gray for road surface
     weight: 12,           // Wider base
     opacity: 0.2,
