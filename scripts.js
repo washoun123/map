@@ -52,3 +52,18 @@ var roadBorders = L.polyline([tunis, BebAlioua, JebalJloud, hammamet, Enfidha, s
     lineJoin: 'round'
 }).addTo(map);
 
+
+// Locate and show the user's position
+map.locate({ setView: true, maxZoom: 12 });
+
+map.on('locationfound', function(e) {
+  L.marker(e.latlng)
+    .addTo(map)
+    .bindPopup("You are here!")
+    .openPopup();
+});
+
+// Optional: handle location error
+map.on('locationerror', function(e) {
+  alert("Could not get your location.");
+});
