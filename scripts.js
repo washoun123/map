@@ -1,6 +1,24 @@
 
+
+  
   // Initialize map
   var map = L.map('map').setView([34.5, 22.0], 6); // Center on tunisia
+
+  
+  // Locate and show the user's position
+map.locate({maxZoom: 6 });
+
+map.on('locationfound', function(e) {
+  L.marker(e.latlng)
+    .addTo(map)
+    .bindPopup("You are here!")
+    .openPopup();
+});
+
+// Optional: handle location error
+map.on('locationerror', function(e) {
+  alert("Could not get your location.");
+});
 
   // Add OpenStreetMap tile layer
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -53,17 +71,3 @@ var roadBorders = L.polyline([tunis, BebAlioua, JebalJloud, hammamet, Enfidha, s
 }).addTo(map);
 
 
-// Locate and show the user's position
-map.locate({ setView: true, maxZoom: 12 });
-
-map.on('locationfound', function(e) {
-  L.marker(e.latlng)
-    .addTo(map)
-    .bindPopup("You are here!")
-    .openPopup();
-});
-
-// Optional: handle location error
-map.on('locationerror', function(e) {
-  alert("Could not get your location.");
-});
